@@ -3,3 +3,31 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ccc;
+}
+
+.clock {
+	width: 30rem;
+	height: 30rem;
+	margin: 48px;
+	padding: 1.5rem;
+	border: 6px solid #282828;
+	border-radius: 50%;
+	box-shadow: -8px -8px 12px rgba(67,67,67, .4),
+	inset 8px 8px 8px 12px rgba(0,0,0,.3),
+	inset -8px -8px 12px rgba(67,67,67, .4),
+	8px 8px 12px rgba(0,0,0,.3);
+}
+
+.outer-clock {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #282828;
+}
