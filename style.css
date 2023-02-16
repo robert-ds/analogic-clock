@@ -31,3 +31,55 @@ body {
 	border-radius: 50%;
 	background-color: #282828;
 }
+
+.outer-clock::before,
+.outer-clock::after,
+.outer-clock .marking {
+ 	content: "";
+ 	position: absolute;
+ 	width: 4px;
+ 	height: 100%;
+ 	background-color: #bdbdcb;
+ 	z-index: 0;
+ 	left: 49%;
+}
+
+.outer-clock::after {
+	transform: rotate(90deg);
+}
+
+.outer-clock .marking {
+	width: 2px;
+}
+
+.outer-clock .marking.marking-one {
+	transform: rotate(30deg);
+}
+
+.outer-clock .marking.marking-two {
+	transform: rotate(60deg);
+}
+
+.outer-clock .marking.marking-three {
+	transform: rotate(120deg);
+}
+
+.outer-clock .marking.marking-four {
+	transform: rotate(150deg);
+}
+
+.outer-clock .marking-seconds {
+	background-color: transparent;
+	z-index: 1;
+}
+
+.outer-clock .marking-seconds::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 32px;
+	top: -2px;
+	left: -2px;
+	background-color: #3bd9d9;
+}
+
