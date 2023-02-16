@@ -83,3 +83,25 @@ body {
 	background-color: #3bd9d9;
 }
 
+.inner-clock {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: #ccc;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.inner-clock .clock-time {
+	position: absolute;
+	top: 32%;
+	left: 9.5%;
+	width: 80%;
+	color: #fff;
+	font-size: 96pt;
+	font-weight: 700;
+	text-align: center;
+}
+
